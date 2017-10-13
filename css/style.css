@@ -2,14 +2,14 @@
 /*
     import css styles
 */
-@import url(css.ui.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css);
+@import url(cssui.min.css);
 
 /*
     custom styles
 */
 body {
-    font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
-        padding: 10px 0 25px;
+    padding: 10px 0 25px;
 }
 
 h2 {
