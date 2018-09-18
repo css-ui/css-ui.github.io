@@ -9,105 +9,142 @@
 
 	<!-- CSS styles -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=latin-ext">
 	<link rel="stylesheet" href="css/cssui.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="container">
 
-		<h1>CSS UI - The code samples</h1>
+		<!-- title -->
+		<div class="title">CSS UI - The code samples</div>
 
-		<!-- menu -->
-		<div class="wrapper">
-			<ul class="menu">
-				<li><a href="#heading">Heading</a></li>
-				<li><a href="#paragraph">Paragraph</a></li>
-				<li><a href="#buttons">Buttons</a></li>
-				<li><a href="#flash-message">Flash messages</a></li>
-				<li><a href="#forms">Forms</a></li>
-				<li><a href="#grid">Grid system</a></li>
-				<li><a href="#image">Image responsive</a></li>
-			</ul>
-		</div>
-
-		<!-- heading -->
-		<div class="wrapper">
-			<h1 id="heading">Heading 1</h1>
+		<!-- Content -->
+		<div class="wrapper box">
+			<div class="heading"><span>#</span>Content</div>
+			<div class="text">Headings</div>
+			<h1>Heading 1</h1>
 			<h2>Heading 2</h2>
 			<h3>Heading 3</h3>
 			<h4>Heading 4</h4>
 			<h5>Heading 5</h5>
 			<h6>Heading 6</h6>
-		</div>
-
-		<!-- paragraph -->
-		<div class="wrapper">
-			<h2 id="paragraph">Paragraph</h2>
-			<p>
-				<em>
-					<b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</b>
-				</em>
-			</p>
+			<hr>
+			<div class="text">Paragraphs</div>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-				Vestibulum lorem sed risus ultricies tristique nulla. Ut porttitor leo a diam sollicitudin tempor id. Amet dictum sit amet
-				justo donec enim diam vulputate ut. Sapien eget mi proin sed libero. Ornare massa eget egestas purus viverra accumsan in.
-				Nec tincidunt praesent semper feugiat. Turpis massa tincidunt dui ut ornare lectus. Senectus et netus et malesuada fames.
-				Ut pharetra sit amet aliquam id diam maecenas ultricies.
+				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 			</p>
+			<p>
+				<em>Duis aute irure <strong>dolor in reprehenderit in voluptate</strong> velit esse cillum <strong>dolore eu fugiat</strong> nulla pariatur.</em>
+			</p>
+			<hr>
+			<div class="text">Lists</div>
+			<ol>
+				<li>Lorem ipsum</li>
+				<li>Dolor sit amet
+				    	<ul>
+						<li>Lorem sed risus</li>
+						<li>Eiusmod tempor</li>
+					</ul>
+				</li>
+				<li>Consectetur
+					<ul>
+						<li>Lorem ipsum</li>
+						<li>Dolor sit amet
+							<ul>
+								<li>Lorem sed risus</li>
+								<li>Eiusmod tempor</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>Lorem ipsum</li>
+				<li>Lorem sed risus</li>
+			</ol>
+			<hr>
+			<div class="text">Quotes</div>
+			<blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</blockquote>
+			<hr>
+			<div class="text">Table</div>
+			<table class="full width">
+				<tr>
+					<th>One</th>
+					<th>Two</th>
+					<th>Three</th>
+				</tr>
+				<tr>
+					<td>Three</td>
+					<td>Two</td>
+					<td>One</td>
+				</tr>
+				<tr>
+					<td>One</td>
+					<td>Two</td>
+					<td>Three</td>
+				</tr>
+			</table>
 		</div>
 
 		<!-- buttons -->
-		<div class="wrapper">
-			<h2 id="buttons">Buttons</h2>
-			<a href="#" class="button">No style</a>
-			<a href="#" class="button default">Default</a>
-			<br>
-			<a href="#" class="button default primary">Primary</a>
-			<a href="#" class="button default common">Common</a>
-			<a href="#" class="button default success">Success</a>
-			<a href="#" class="button default danger">Danger</a>
-			<br>
-			<a href="#" class="button primary">Primary</a>
-			<a href="#" class="button common">Common</a>
-			<a href="#" class="button success">Success</a>
-			<a href="#" class="button danger">Danger</a>
-
-			<h2>Larger button</h2>
-			<a href="#" class="button primary larger">Larger button</a>
-
-			<h2>Bigger button</h2>
-			<a href="#" class="button primary bigger">Bigger button</a>
-
-			<h2>Full width bigger button</h2>
-			<a href="#" class="button primary bigger full width">Bigger button</a>
+		<div class="wrapper box">
+			<div class="heading"><span>#</span>Buttons</div>
+			<div class="text">Sample of individual buttons</div>
+			<div class="wrapper">
+				<a href="#" class="button">Hyperlink</a>
+				<button class="button">Button</button>
+				<input class="button" type="submit" value="Submit">
+				<input class="button" type="reset" value="Reset">
+			</div>
+			<div class="text">Colors</div>
+			<div class="wrapper">
+				<a class="button common">Common</a>
+				<a class="button primary">Primary</a>
+				<a class="button success">Success</a>
+				<a class="button warning">Warning</a>
+				<a class="button danger">Danger</a>
+			</div>
+			<div class="wrapper">
+				<a class="button common outline">Common</a>
+				<a class="button primary outline">Primary</a>
+				<a class="button success outline">Success</a>
+				<a class="button warning outline">Warning</a>
+				<a class="button danger outline">Danger</a>
+			</div>
+			<div class="text">Simple</div>
+			<div class="wrapper">
+				<a class="button white">White</a>
+				<a class="button light">Light</a>
+			</div>
 		</div>
 
-		<!-- flash message -->
-		<div class="wrapper">
-			<h2 id="flash-message">Flash messages</h2>
-			<p class="message success">Success message</p>
-			<p class="message info">Info message</p>
-			<p class="message warning">Warning message</p>
+		<!-- messages -->
+		<div class="wrapper box">
+			<div class="heading"><span>#</span>Flash messages</div>
+			<p class="message common">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<p class="message primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<p class="message success">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<p class="message warning">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<p class="message danger">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 		</div>
 
 		<!-- forms -->
-		<div class="wrapper">
+		<div class="wrapper box">
 
-			<h2 id="forms">Forms</h2>
+			<div class="heading"><span>#</span>Forms</div>
 
-			<!-- Sample #1 -->
+			<!-- sample #1 -->
 			<div class="wrapper">
-				<p><b>Sample #1</b></p>
+				<div class="text">Sample #1</div>
 				<form>
 					<input type="text" placeholder="Search keywords">
 					<input type="submit" class="button primary" value="Search">
 				</form>
 			</div>
 
-			<!-- Sample #2 -->
+			<!-- sample #2 -->
 			<div class="wrapper">
-				<p><b>Sample #2</b></p>
+				<div class="text">Sample #2</div>
 				<form>
 					<input type="text" placeholder="Username">
 					<input type="password" placeholder="Password" required>
@@ -115,9 +152,9 @@
 				</form>
 			</div>
 
-			<!-- Sample #3 -->
+			<!-- sample #3 -->
 			<div class="wrapper">
-				<p><b>Sample #3</b></p>
+				<div class="text">Sample #3</div>
 				<form>
 					<input type="text" placeholder="Username">
 					<input type="password" placeholder="Password" required>
@@ -125,9 +162,9 @@
 				</form>
 			</div>
 
-			<!-- Sample #4 -->
+			<!-- sample #4 -->
 			<div class="wrapper">
-				<p><b>Sample #4</b></p>
+				<div class="text">Sample #4</div>
 				<form>
 					<label for="email">Email</label>
 					<input type="email" id="email" placeholder="Email">
@@ -138,9 +175,9 @@
 				</form>
 			</div>
 
-			<!-- Sample #5 -->
+			<!-- sample #5 -->
 			<div class="wrapper">
-				<p><b>Sample #5</b></p>
+				<div class="text">Sample #5</div>
 				<form>
 					<input type="email" id="email" placeholder="Email" class="wrapper">
 					<input type="text" id="realname" placeholder="Realname" required class="wrapper">
@@ -149,9 +186,9 @@
 				</form>
 			</div>
 
-			<!-- Sample #6 -->
+			<!-- sample #6 -->
 			<div class="wrapper">
-				<p><b>Sample #6</b></p>
+				<div class="text">Sample #6</div>
 				<form>
 					<label for="age">You age</label>
 					<input type="text" id="age" placeholder="Age">
@@ -171,9 +208,9 @@
 				</form>
 			</div>
 
-			<!-- Sample #7 -->
+			<!-- sample #7 -->
 			<div class="wrapper">
-				<p><b>Sample #7</b></p>
+				<div class="text">Sample #7</div>
 				<form>
 					<div class="row">
 						<div class="six columns">
@@ -193,9 +230,9 @@
 				</form>
 			</div>
 
-			<!-- Sample #8 -->
+			<!-- sample #8 -->
 			<div class="screen block">
-				<p><b>Sample #8</b></p>
+				<div class="text">Sample #8</div>
 				<form>
 					<fieldset>
 						<legend>Form style</legend>
@@ -218,8 +255,8 @@
 		</div>
 
 		<!-- grid system -->
-	    	<div class="wrapper">
-			<h2 id="grid">Grid system</h2>
+	    	<div class="wrapper box">
+			<div class="heading"><span>#</span>Grid system</div>
 			<div class="row view">
 				<div class="one column">one</div>
 				<div class="eleven columns">eleven</div>
@@ -282,9 +319,11 @@
 		</div>
 
 		<!-- responsive image -->
-		<div class="wrapper">
-			<h2 id="image">Responsive image</h2>
-			<img src="img/logo.png" alt="CSS UI Framework" class="max width">
+		<div class="wrapper box">
+			<div class="heading"><span>#</span>Responsive image</div>
+			<div class="align center">
+				<img src="img/logo.png" alt="CSS UI Framework" class="max width">
+			</div>
 		</div>
 	</div>
 </body>
