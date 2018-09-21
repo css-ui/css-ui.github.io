@@ -132,117 +132,105 @@
 
 			<div class="heading"><span>#</span>Forms</div>
 
-			<!-- sample #1 -->
+			<!-- search -->
 			<div class="wrapper">
-				<div class="text">Sample #1</div>
-				<form>
-					<input type="text" placeholder="Search keywords">
+				<div class="text">Search</div>
+				<form class="search">
+					<input class="find" type="text" placeholder="Search keywords">
 					<input type="submit" class="button primary" value="Search">
 				</form>
 			</div>
 
-			<!-- sample #2 -->
+			<!-- group -->
 			<div class="wrapper">
-				<div class="text">Sample #2</div>
-				<form>
-					<input type="text" placeholder="Username">
-					<input type="password" placeholder="Password" required>
+				<div class="text">Grouping</div>
+				<form class="group">
+					<input class="top" type="text" placeholder="Text">
+					<input class="middle" type="password" placeholder="Password" required>
+					<input class="middle" type="email" placeholder="Email">
+					<select class="middle" required>
+						<option value="">Select</option>
+						<option value="1">Woman</option>
+						<option value="2">Man</option>
+					</select>
+					<textarea class="bottom" placeholder="Textarea"></textarea>
 					<input type="submit" class="button primary" value="Submit">
 				</form>
 			</div>
 
-			<!-- sample #3 -->
+			<!-- classic #1 -->
 			<div class="wrapper">
-				<div class="text">Sample #3</div>
+				<div class="text">Classic #1</div>
 				<form>
-					<input type="text" placeholder="Username">
+					<input type="text" placeholder="Text">
 					<input type="password" placeholder="Password" required>
+					<select required>
+						<option value="">Select</option>
+						<option value="1">Woman</option>
+						<option value="2">Man</option>
+					</select>
+					<textarea placeholder="Textarea"></textarea>
 					<input type="submit" class="button primary wrapper" value="Submit">
 				</form>
 			</div>
 
-			<!-- sample #4 -->
+			<!-- classic #2 -->
 			<div class="wrapper">
-				<div class="text">Sample #4</div>
+				<div class="text">Classic #2</div>
 				<form>
-					<label for="email">Email</label>
-					<input type="email" id="email" placeholder="Email">
+					<label for="text">Text</label>
+					<input type="text" id="text" placeholder="Text">
 
-					<label for="realname">Realname</label>
-					<input type="text" id="realname" placeholder="Realname" required>
-					<input type="submit" class="button primary wrapper" value="Submit">
-				</form>
-			</div>
-
-			<!-- sample #5 -->
-			<div class="wrapper">
-				<div class="text">Sample #5</div>
-				<form>
-					<input type="email" placeholder="Email" class="wrapper">
-					<input type="text" placeholder="Realname" required class="wrapper">
+					<label for="password">Password</label>
+					<input type="password" id="password" placeholder="Password" required>
+					<label for="select">Select</label>
+						<select id="select" required>
+							<option value="">Choose an item</option>
+							<option value="1">Woman</option>
+							<option value="2">Man</option>
+						</select>
+					<label for="textarea">Textarea</label>
 					<textarea placeholder="Textarea" id="textarea"></textarea>
 					<input type="submit" class="button primary wrapper" value="Submit">
 				</form>
 			</div>
 
-			<!-- sample #6 -->
+			<!-- classic #3 -->
 			<div class="wrapper">
-				<div class="text">Sample #6</div>
-				<form>
-					<label for="age">You age</label>
-					<input type="text" id="age" placeholder="Age">
-
-					<label for="name">Name</label>
-					<input type="text" id="name" placeholder="Name" required>
-
-					<div class="wrapper">
-						<label for="name">Sex</label>
-						<select id="sex" required>
-							<option value="">Select</option>
-							<option value="1">Woman</option>
-							<option value="2">Man</option>
-						</select>
-					</div>
-					<input type="submit" class="button primary" value="Submit">
-				</form>
-			</div>
-
-			<!-- sample #7 -->
-			<div class="wrapper">
-				<div class="text">Sample #7</div>
+				<div class="text">Classic #3</div>
 				<form>
 					<div class="row">
 						<div class="six columns">
-							<label for="acc">Account</label>
-							<input type="text" id="acc" placeholder="Account" class="full width">
+							<label for="text-2">Text</label>
+							<input type="text" id="text-2" placeholder="Text" class="full width">
 						</div>
 						<div class="six columns">
-							<label for="nick">Nick</label>
-							<input type="text" id="nick" placeholder="Nick" required class="full width">
+							<label for="password-2">Password</label>
+							<input type="password" id="password-2" placeholder="password" required class="full width">
 						</div>
 					</div>
-					<label for="checkbox2">
-						<input type="checkbox" id="checkbox2">
-						<span>Like you this style?</span>
+					<label for="checkbox">
+						<input type="checkbox" id="checkbox">
+						<span>Checkbox</span>
 					</label>
 					<input type="submit" class="button primary" value="Submit">
 				</form>
 			</div>
 
-			<!-- sample #8 -->
+			<!-- classic #4 -->
 			<div class="screen block">
-				<div class="text">Sample #8</div>
+				<div class="text">Classic #4</div>
 				<form>
 					<fieldset>
-						<legend>Form style</legend>
+						<legend>Form in fieldset</legend>
 						<div class="row">
 							<div class="six columns">
-								<input type="text" placeholder="Username" class="full width">
-								<i class="help">This one help text.</i>
+								<input type="text" placeholder="Text" class="full width">
+								<i class="help">This one help for text.</i>
 							</div>
 							<div class="six columns">
 								<input type="password" placeholder="Password" required class="full width">
-								<i class="help">This one help text.</i>
+								<i class="help">This one help for password.</i>
 							</div>
 						</div>
 						<div class="align right">
