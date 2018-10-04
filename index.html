@@ -155,15 +155,9 @@
 			<div class="wrapper">
 				<div class="text">Grouping</div>
 				<form class="group">
-					<input type="text" placeholder="Text" class="top">
+					<input type="text" placeholder="Password" class="top">
 					<input type="password" placeholder="Password" required class="middle" >
-					<input type="email" placeholder="Email" class="middle" >
-					<select required class="middle" >
-						<option value="">Select</option>
-						<option value="1">Woman</option>
-						<option value="2">Man</option>
-					</select>
-					<textarea placeholder="Textarea" class="bottom"></textarea>
+					<input type="email" placeholder="Email" class="bottom" >
 					<input type="submit" value="Submit" class="button primary">
 				</form>
 			</div>
@@ -174,12 +168,6 @@
 				<form>
 					<input type="text" placeholder="Text">
 					<input type="password" placeholder="Password" required>
-					<select required>
-						<option value="">Select</option>
-						<option value="1">Woman</option>
-						<option value="2">Man</option>
-					</select>
-					<textarea placeholder="Textarea"></textarea>
 					<input type="submit" value="Submit" class="button primary">
 				</form>
 			</div>
@@ -193,14 +181,6 @@
 
 					<label for="password">Password</label>
 					<input type="password" id="password" placeholder="Password" required>
-					<label for="select">Select</label>
-						<select id="select" required>
-							<option value="">Choose an item</option>
-							<option value="1">Woman</option>
-							<option value="2">Man</option>
-						</select>
-					<label for="textarea">Textarea</label>
-					<textarea placeholder="Textarea" id="textarea"></textarea>
 					<input type="submit" value="Submit" class="button primary">
 				</form>
 			</div>
@@ -215,20 +195,22 @@
 							<input type="text" id="text-2" placeholder="Text" class="full width">
 						</div>
 						<div class="six columns">
-							<label for="password-2">Password</label>
-							<input type="password" id="password-2" placeholder="password" required class="full width">
+							<label for="select">Select</label>
+							<select id="select" required class="full width">
+								<option value="">Choose an item</option>
+								<option value="1">Woman</option>
+								<option value="2">Man</option>
+							</select>
 						</div>
 					</div>
-					<label for="checkbox">
-						<input type="checkbox" id="checkbox">
-						<span>Checkbox</span>
-					</label>
+					<label for="textarea">Textarea</label>
+					<textarea placeholder="Textarea" id="textarea" class="full width"></textarea>
 					<input type="submit" value="Submit" class="button primary">
 				</form>
 			</div>
 
 			<!-- classic #4 -->
-			<div class="screen block">
+			<div class="wrapper">
 				<div class="text">Classic #4</div>
 				<form>
 					<fieldset>
@@ -247,6 +229,25 @@
 							<input type="submit" value="Submit" class="button primary">
 						</div>
 					</fieldset>
+				</form>
+			</div>
+
+			<!-- radio inpits -->
+			<div class="wrapper">
+				<div class="text">Radio inputs</div>
+				<form>
+					<div class="wrapper">
+						<label class="radio">One
+							<input type="radio" name="radio">
+							<span class="checkmark"></span>
+						</label>
+					</div>
+					<div class="wrapper">
+						<label class="radio">Two
+							<input type="radio" name="radio">
+							<span class="checkmark"></span>
+						</label>
+					</div>
 				</form>
 			</div>
 		</div>
