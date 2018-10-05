@@ -57,3 +57,32 @@ h2 {
     text-align: center;
     text-transform: uppercase;
 }
+
+.check,
+.radio {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+    padding: 0 0 0 22px;
+    position: relative;
+    user-select: none;
+}
+
+.check input,
+.radio input {
+    visibility: hidden;
+    position: absolute;
+    display: none;
+}
+
+.check .checkmark:after,
+.radio .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.check input:checked ~ .checkmark:after,
+.radio input:checked ~ .checkmark:after {
+    display: block;
+}
