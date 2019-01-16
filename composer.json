@@ -1,10 +1,24 @@
 {
 	"require": {
-		"accgit/open-sans": "^1.0",
-		"css-ui/css-ui": "^2.0",
-		"frontpack/composer-assets-plugin": "^0.9"
+		"npm-asset/css-ui-simple": "^2.4",
+		"npm-asset/open-sans-fontface": "^1.4"
 	},
 	"config": {
-		"assets-dir": "www/assets"
+		"fxp-asset": {
+			"ignore-files": {
+				"npm-asset/css-ui-simple": [
+					"src/css/"
+				],
+				"npm-asset/open-sans-fontface": [
+					"sass",
+					"*.html",
+					"*.less",
+					"*.scss"
+				]
+			},
+			"installer-paths": {
+				"npm-asset-library": "www/assets"
+			}
+		}
 	}
 }
