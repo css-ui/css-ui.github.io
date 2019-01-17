@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4b16f8855a6c8f0b00ef55fd33c4aa6a",
+    "content-hash": "1e7ce44efe8ffaac241db5bf7c2482b9",
     "packages": [
         {
             "name": "npm-asset/css-ui-responsive-menu",
