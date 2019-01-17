@@ -1,0 +1,295 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "722b75654449f7c5f29680df81a26361",
+    "packages": [
+        {
+            "name": "bower-asset/jquery",
+            "version": "3.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jquery/jquery-dist.git",
+                "reference": "9e8ec3d10fad04748176144f108d7355662ae75e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/9e8ec3d10fad04748176144f108d7355662ae75e",
+                "reference": "9e8ec3d10fad04748176144f108d7355662ae75e",
+                "shasum": ""
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": "dist/jquery.js",
+                "bower-asset-ignore": [
+                    "package.json"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "browser",
+                "javascript",
+                "jquery",
+                "library"
+            ],
+            "time": "2018-01-20T17:26:57+00:00"
+        },
+        {
+            "name": "npm-asset/css-ui-responsive-menu",
+            "version": "3.0.4",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/css-ui-responsive-menu/-/css-ui-responsive-menu-3.0.4.tgz",
+                "reference": null,
+                "shasum": "611f8e17c29b28a5b2bf7fe65f7b7b156a70dbb7"
+            },
+            "type": "npm-asset-library",
+            "extra": {
+                "npm-asset-bugs": {
+                    "url": "https://github.com/css-ui/responsive-menu/issues"
+                },
+                "npm-asset-main": "project",
+                "npm-asset-directories": [],
+                "npm-asset-repository": {
+                    "type": "git",
+                    "url": "git+https://accgit@github.com/css-ui/responsive-menu.git"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Simple responsive sidebar menu.",
+            "homepage": "https://github.com/css-ui/responsive-menu#readme",
+            "keywords": [
+                "menu",
+                "nav",
+                "sidebar"
+            ],
+            "time": "2019-01-16T11:52:23+00:00"
+        },
+        {
+            "name": "npm-asset/css-ui-simple",
+            "version": "2.4.3",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/css-ui-simple/-/css-ui-simple-2.4.3.tgz",
+                "reference": null,
+                "shasum": "be959a803b3e8bd82339a2dc14a3d422106989c2"
+            },
+            "require": {
+                "npm-asset/normalize.css": ">=8.0.0,<9.0.0"
+            },
+            "type": "npm-asset-library",
+            "extra": {
+                "npm-asset-bugs": {
+                    "url": "https://github.com/css-ui/css-ui/issues"
+                },
+                "npm-asset-main": "src/cssui.css",
+                "npm-asset-directories": [],
+                "npm-asset-repository": {
+                    "type": "git",
+                    "url": "git+https://accgit@github.com/css-ui/css-ui.git"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Basic styles for simple websites.",
+            "homepage": "https://github.com/css-ui/css-ui#readme",
+            "keywords": [
+                "css",
+                "framework",
+                "web"
+            ],
+            "time": "2019-01-17T05:37:38+00:00"
+        },
+        {
+            "name": "npm-asset/font-awesome",
+            "version": "4.7.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/font-awesome/-/font-awesome-4.7.0.tgz",
+                "reference": null,
+                "shasum": "8fa8cf0411a1a31afd07b06d2902bb9fc815a133"
+            },
+            "type": "npm-asset-library",
+            "extra": {
+                "npm-asset-bugs": {
+                    "url": "http://github.com/FortAwesome/Font-Awesome/issues"
+                },
+                "npm-asset-directories": [],
+                "npm-asset-repository": {
+                    "type": "git",
+                    "url": "git+https://github.com/FortAwesome/Font-Awesome.git"
+                },
+                "npm-asset-scripts": [],
+                "npm-asset-engines": {
+                    "node": ">=0.10.3"
+                }
+            },
+            "license": [
+                "(OFL-1.1 AND MIT)"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Gandy",
+                    "email": "dave@fontawesome.io",
+                    "url": "http://twitter.com/davegandy"
+                },
+                {
+                    "name": "Brian Talbot",
+                    "url": "http://twitter.com/talbs"
+                },
+                {
+                    "name": "Travis Chase",
+                    "url": "http://twitter.com/supercodepoet"
+                },
+                {
+                    "name": "Rob Madole",
+                    "url": "http://twitter.com/robmadole"
+                },
+                {
+                    "name": "Geremia Taglialatela",
+                    "url": "http://twitter.com/gtagliala"
+                }
+            ],
+            "description": "The iconic font and CSS framework",
+            "homepage": "http://fontawesome.io/",
+            "keywords": [
+                "awesome",
+                "bootstrap",
+                "font",
+                "font",
+                "fontawesome",
+                "icon"
+            ],
+            "time": "2016-10-24T21:33:40+00:00"
+        },
+        {
+            "name": "npm-asset/normalize.css",
+            "version": "8.0.1",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/normalize.css/-/normalize.css-8.0.1.tgz",
+                "reference": null,
+                "shasum": "9b98a208738b9cc2634caacbc42d131c97487bf3"
+            },
+            "type": "npm-asset-library",
+            "extra": {
+                "npm-asset-bugs": {
+                    "url": "https://github.com/necolas/normalize.css/issues"
+                },
+                "npm-asset-main": "normalize.css",
+                "npm-asset-directories": [],
+                "npm-asset-repository": {
+                    "type": "git",
+                    "url": "git+https://github.com/necolas/normalize.css.git"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A modern alternative to CSS resets",
+            "homepage": "https://necolas.github.io/normalize.css",
+            "time": "2018-11-09T22:48:56+00:00"
+        },
+        {
+            "name": "npm-asset/open-sans-fontface",
+            "version": "1.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FontFaceKit/open-sans.git",
+                "reference": "2285c0300e6a4c8b102b98fb030fb38c26aa081c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FontFaceKit/open-sans/zipball/2285c0300e6a4c8b102b98fb030fb38c26aa081c",
+                "reference": "2285c0300e6a4c8b102b98fb030fb38c26aa081c",
+                "shasum": ""
+            },
+            "type": "npm-asset-library",
+            "extra": {
+                "npm-asset-main": "./open-sans.css",
+                "npm-asset-repository": {
+                    "type": "git",
+                    "url": "https://github.com/FontFaceKit/open-sans"
+                }
+            },
+            "license": [
+                "Apache License version 2.0"
+            ],
+            "description": "The Open Sans fontface",
+            "homepage": "https://github.com/FontFaceKit/open-sans",
+            "keywords": [
+                "font"
+            ],
+            "time": "2015-06-29T20:26:42+00:00"
+        },
+        {
+            "name": "npm-asset/perfect-scrollbar",
+            "version": "1.4.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/perfect-scrollbar/-/perfect-scrollbar-1.4.0.tgz",
+                "reference": null,
+                "shasum": "5d014ef9775e1f43058a1dbae9ed1daf0e7091f1"
+            },
+            "type": "npm-asset-library",
+            "extra": {
+                "npm-asset-bugs": {
+                    "url": "https://github.com/utatti/perfect-scrollbar/issues"
+                },
+                "npm-asset-files": [
+                    "css",
+                    "dist",
+                    "src",
+                    "types"
+                ],
+                "npm-asset-main": "dist/perfect-scrollbar.common.js",
+                "npm-asset-directories": [],
+                "npm-asset-repository": {
+                    "type": "git",
+                    "url": "git+https://github.com/utatti/perfect-scrollbar.git"
+                },
+                "npm-asset-scripts": {
+                    "test": "npm run format:lint && npm run build",
+                    "build": "npm run clean && node build",
+                    "clean": "rm -rf dist",
+                    "watch": "npm run build && SHELL=/bin/bash chokidar 'src/**/*.js' -c 'npm run format && npm run build'",
+                    "format": "prettier --write --single-quote --trailing-comma es5 'src/**/*.js'",
+                    "format:lint": "prettier -l --single-quote --trailing-comma es5 'src/**/*.js'",
+                    "release": "./release"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hyunje Jun",
+                    "email": "me@noraesae.net"
+                }
+            ],
+            "description": "Minimalistic but perfect custom scrollbar plugin",
+            "homepage": "https://github.com/utatti/perfect-scrollbar#readme",
+            "keywords": [
+                "frontend",
+                "scroll",
+                "scrollbar"
+            ],
+            "time": "2018-06-07T05:01:12+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

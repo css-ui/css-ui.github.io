@@ -1,0 +1,17 @@
+{
+	"require": {
+		"npm-asset/normalize.css": "^8.0"
+	},
+	"config": {
+		"fxp-asset": {
+			"ignore-files": {
+				"npm-asset/normalize.css": [
+					"*.md"
+				]
+			},
+			"installer-paths": {
+				"npm-asset-library": "www/assets"
+			}
+		}
+	}
+}
