@@ -4,48 +4,23 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "722b75654449f7c5f29680df81a26361",
+    "content-hash": "4b16f8855a6c8f0b00ef55fd33c4aa6a",
     "packages": [
         {
-            "name": "bower-asset/jquery",
-            "version": "3.3.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/jquery/jquery-dist.git",
-                "reference": "9e8ec3d10fad04748176144f108d7355662ae75e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/9e8ec3d10fad04748176144f108d7355662ae75e",
-                "reference": "9e8ec3d10fad04748176144f108d7355662ae75e",
-                "shasum": ""
-            },
-            "type": "bower-asset-library",
-            "extra": {
-                "bower-asset-main": "dist/jquery.js",
-                "bower-asset-ignore": [
-                    "package.json"
-                ]
-            },
-            "license": [
-                "MIT"
-            ],
-            "keywords": [
-                "browser",
-                "javascript",
-                "jquery",
-                "library"
-            ],
-            "time": "2018-01-20T17:26:57+00:00"
-        },
-        {
             "name": "npm-asset/css-ui-responsive-menu",
-            "version": "3.0.4",
+            "version": "3.0.8",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/css-ui-responsive-menu/-/css-ui-responsive-menu-3.0.4.tgz",
+                "url": "https://registry.npmjs.org/css-ui-responsive-menu/-/css-ui-responsive-menu-3.0.8.tgz",
                 "reference": null,
-                "shasum": "611f8e17c29b28a5b2bf7fe65f7b7b156a70dbb7"
+                "shasum": "ddf074c5c8bdde78cf84e06acd3705876ccdc541"
+            },
+            "require": {
+                "npm-asset/css-ui-simple": ">=2.4.0,<3.0.0",
+                "npm-asset/font-awesome": ">=4.7.0,<5.0.0",
+                "npm-asset/jquery": ">=3.3.1,<4.0.0",
+                "npm-asset/open-sans-fontface": ">=1.4.0,<2.0.0",
+                "npm-asset/perfect-scrollbar": ">=1.4.0,<2.0.0"
             },
             "type": "npm-asset-library",
             "extra": {
@@ -69,26 +44,26 @@
                 "nav",
                 "sidebar"
             ],
-            "time": "2019-01-16T11:52:23+00:00"
+            "time": "2019-01-17T08:45:19+00:00"
         },
         {
             "name": "npm-asset/css-ui-simple",
-            "version": "2.4.3",
+            "version": "2.4.4",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/css-ui-simple/-/css-ui-simple-2.4.3.tgz",
+                "url": "https://registry.npmjs.org/css-ui-simple/-/css-ui-simple-2.4.4.tgz",
                 "reference": null,
-                "shasum": "be959a803b3e8bd82339a2dc14a3d422106989c2"
+                "shasum": "6882f148e5dd15f8185740bec79d9119ba36b86c"
             },
             "require": {
-                "npm-asset/normalize.css": ">=8.0.0,<9.0.0"
+                "npm-asset/normalize.css": ">=8.0.1,<9.0.0"
             },
             "type": "npm-asset-library",
             "extra": {
                 "npm-asset-bugs": {
                     "url": "https://github.com/css-ui/css-ui/issues"
                 },
-                "npm-asset-main": "src/cssui.css",
+                "npm-asset-main": "css/cssui.css",
                 "npm-asset-directories": [],
                 "npm-asset-repository": {
                     "type": "git",
@@ -105,7 +80,7 @@
                 "framework",
                 "web"
             ],
-            "time": "2019-01-17T05:37:38+00:00"
+            "time": "2019-01-17T08:04:13+00:00"
         },
         {
             "name": "npm-asset/font-awesome",
@@ -168,6 +143,56 @@
                 "icon"
             ],
             "time": "2016-10-24T21:33:40+00:00"
+        },
+        {
+            "name": "npm-asset/jquery",
+            "version": "3.3.1",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/jquery/-/jquery-3.3.1.tgz",
+                "reference": null,
+                "shasum": "958ce29e81c9790f31be7792df5d4d95fc57fbca"
+            },
+            "type": "npm-asset-library",
+            "extra": {
+                "npm-asset-bugs": {
+                    "url": "https://github.com/jquery/jquery/issues"
+                },
+                "npm-asset-main": "dist/jquery.js",
+                "npm-asset-directories": [],
+                "npm-asset-repository": {
+                    "type": "git",
+                    "url": "git+https://github.com/jquery/jquery.git"
+                },
+                "npm-asset-scripts": {
+                    "build": "npm install && grunt",
+                    "start": "grunt watch",
+                    "test:browserless": "grunt && grunt test:slow",
+                    "test:browser": "grunt && grunt karma:main",
+                    "test": "grunt && grunt test:slow && grunt karma:main",
+                    "jenkins": "npm run test:browserless",
+                    "precommit": "grunt lint:newer qunit_fixture",
+                    "commitmsg": "node node_modules/commitplease"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "JS Foundation and other contributors",
+                    "url": "https://github.com/jquery/jquery/blob/3.3.1/AUTHORS.txt"
+                }
+            ],
+            "description": "JavaScript library for DOM operations",
+            "homepage": "https://jquery.com",
+            "keywords": [
+                "browser",
+                "javascript",
+                "jquery",
+                "library"
+            ],
+            "time": "2018-01-20T17:27:11+00:00"
         },
         {
             "name": "npm-asset/normalize.css",
