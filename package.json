@@ -1,0 +1,22 @@
+{
+	"name": "css-ui.github.io",
+	"version": "1.0.0",
+	"description": "CSS UI - Demo",
+	"main": "gruntfile.js",
+	"dependencies": {
+		"css-ui-responsive-menu": "^3.1.0",
+		"grunt": "^1.0.3",
+		"grunt-contrib-cssmin": "^3.0.0",
+		"grunt-contrib-uglify": "^4.0.0",
+		"grunt-contrib-copy": "^1.0.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://accgit@github.com/css-ui/css-ui.github.io.git"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/css-ui/css-ui.github.io/issues"
+	},
+	"homepage": "https://github.com/css-ui/css-ui.github.io#readme"
+}
