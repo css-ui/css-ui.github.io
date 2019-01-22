@@ -4,19 +4,17 @@ module.exports = function(grunt) {
 		cssmin: {
 			target: {
 				files: [
-					{'www/css/cssui-demo.min.css': [
+					{'www/css/cssui.min.css': [
 						'node_modules/normalize.css/normalize.css',
 						'node_modules/open-sans-fontface/open-sans.css',
-						'node_modules/css-ui-simple/css/cssui.css',
-						'style.css'
-					]},
-					{'www/css/cssui-menu-demo.min.css': [
-						'node_modules/normalize.css/normalize.css',
-						'node_modules/perfect-scrollbar/css/perfect-scrollbar.css',
 						'node_modules/font-awesome/css/font-awesome.css',
-						'node_modules/open-sans-fontface/open-sans.css',
+						'node_modules/perfect-scrollbar/css/perfect-scrollbar.css',
 						'node_modules/css-ui-simple/css/cssui.css',
-						'node_modules/css-ui-responsive-menu/css/style.menu.css'
+						'node_modules/css-ui-responsive-menu/css/style.menu.css',
+						'node_modules/css-ui-dropdown-menu/css/style.dropdown.css',
+						'node_modules/css-ui-tooltip/css/style.tooltip.css',
+						'node_modules/css-ui-tooltip/css/style.tooltip.theme.css',
+						'node_modules/css-ui-table/css/style.tables.css'
 					]},
 					{'www/css/cssui-menu-light.min.css': [
 						'node_modules/css-ui-responsive-menu/css/style.menu.light.css'
@@ -24,31 +22,14 @@ module.exports = function(grunt) {
 					{'www/css/cssui-menu-dark.min.css': [
 						'node_modules/css-ui-responsive-menu/css/style.menu.dark.css'
 					]},
-					{'www/css/cssui-dropdown.min.css': [
-						'node_modules/normalize.css/normalize.css',
-						'node_modules/font-awesome/css/font-awesome.css',
-						'node_modules/open-sans-fontface/open-sans.css',
-						'node_modules/css-ui-simple/css/cssui.css',
-						'node_modules/css-ui-dropdown-menu/css/style.dropdown.css'
-					]},
 					{'www/css/cssui-dropdown-light.min.css': [
 						'node_modules/css-ui-dropdown-menu/css/style.dropdown.light.css'
 					]},
 					{'www/css/cssui-dropdown-dark.min.css': [
 						'node_modules/css-ui-dropdown-menu/css/style.dropdown.dark.css'
 					]},
-					{'www/css/cssui-sign-in.min.css': [
-						'node_modules/normalize.css/normalize.css',
-						'node_modules/open-sans-fontface/open-sans.css',
-						'node_modules/css-ui-simple/css/cssui.css',
+					{'www/css/cssui-sing-in.min.css': [
 						'node_modules/css-ui-sign-in/css/style.sign.in.css'
-					]},
-					{'www/css/cssui-tooltip.min.css': [
-						'node_modules/normalize.css/normalize.css',
-						'node_modules/open-sans-fontface/open-sans.css',
-						'node_modules/css-ui-simple/css/cssui.css',
-						'node_modules/css-ui-tooltip/css/style.tooltip.css',
-						'node_modules/css-ui-tooltip/css/style.tooltip.theme.css'
 					]}
 				]
 			}

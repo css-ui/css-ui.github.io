@@ -4,13 +4,14 @@
 	"description": "CSS UI - Demo.",
 	"main": "gruntfile.js",
 	"dependencies": {
-		"css-ui-responsive-menu": "^3.1.0",
-		"css-ui-dropdown-menu": "^1.1.9",
-		"css-ui-sign-in": "^1.1.1",
-		"css-ui-tooltip": "^2.0.4",
+		"css-ui-dropdown-menu": "^1.2.0",
+		"css-ui-responsive-menu": "^3.1.1",
+		"css-ui-sign-in": "^1.1.2",
+		"css-ui-table": "^1.0.8",
+		"css-ui-tooltip": "^2.0.6",
 		"grunt": "^1.0.3",
-		"grunt-contrib-cssmin": "^3.0.0",
 		"grunt-contrib-copy": "^1.0.0",
+		"grunt-contrib-cssmin": "^3.0.0",
 		"grunt-contrib-uglify": "^4.0.0"
 	},
 	"repository": {
