@@ -43,6 +43,13 @@ module.exports = function(grunt) {
 						'node_modules/css-ui-simple/css/cssui.css',
 						'node_modules/css-ui-sign-in/css/style.sign.in.css'
 					]},
+					{'www/css/cssui-tooltip.min.css': [
+						'node_modules/normalize.css/normalize.css',
+						'node_modules/open-sans-fontface/open-sans.css',
+						'node_modules/css-ui-simple/css/cssui.css',
+						'node_modules/css-ui-tooltip/css/style.tooltip.css',
+						'node_modules/css-ui-tooltip/css/style.tooltip.theme.css'
+					]}
 				]
 			}
 		},
