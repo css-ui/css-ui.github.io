@@ -36,7 +36,13 @@ module.exports = function(grunt) {
 					]},
 					{'www/css/cssui-dropdown-dark.min.css': [
 						'node_modules/css-ui-dropdown-menu/css/style.dropdown.dark.css'
-					]}
+					]},
+					{'www/css/cssui-sign-in.min.css': [
+						'node_modules/normalize.css/normalize.css',
+						'node_modules/open-sans-fontface/open-sans.css',
+						'node_modules/css-ui-simple/css/cssui.css',
+						'node_modules/css-ui-sign-in/css/style.sign.in.css'
+					]},
 				]
 			}
 		},
@@ -44,7 +50,8 @@ module.exports = function(grunt) {
 			main: {
 				files: [
 					{expand: true, cwd: 'node_modules/font-awesome/fonts/', src: ['**'], dest: 'www/fonts/'},
-					{expand: true, cwd: 'node_modules/open-sans-fontface/fonts/', src: ['**'], dest: 'www/css/fonts/'}
+					{expand: true, cwd: 'node_modules/open-sans-fontface/fonts/', src: ['**'], dest: 'www/css/fonts/'},
+					{expand: true, cwd: 'node_modules/css-ui-sign-in/img/', src: ['**'], dest: 'www/img/'}
 				]
 			}
 		},
