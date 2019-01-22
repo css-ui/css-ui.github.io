@@ -14,7 +14,8 @@ module.exports = function(grunt) {
 						'node_modules/css-ui-dropdown-menu/css/style.dropdown.css',
 						'node_modules/css-ui-tooltip/css/style.tooltip.css',
 						'node_modules/css-ui-tooltip/css/style.tooltip.theme.css',
-						'node_modules/css-ui-table/css/style.tables.css'
+						'node_modules/css-ui-table/css/style.tables.css',
+						'node_modules/css-ui-modal-box/css/style.modal.box.css'
 					]},
 					{'www/css/cssui-menu-light.min.css': [
 						'node_modules/css-ui-responsive-menu/css/style.menu.light.css'
