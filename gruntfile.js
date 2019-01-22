@@ -10,7 +10,7 @@ module.exports = function(grunt) {
 						'node_modules/css-ui-simple/css/cssui.css',
 						'style.css'
 					]},
-					{'www/css/css-ui-menu-demo.min.css': [
+					{'www/css/cssui-menu-demo.min.css': [
 						'node_modules/normalize.css/normalize.css',
 						'node_modules/perfect-scrollbar/css/perfect-scrollbar.css',
 						'node_modules/font-awesome/css/font-awesome.css',
@@ -18,11 +18,24 @@ module.exports = function(grunt) {
 						'node_modules/css-ui-simple/css/cssui.css',
 						'node_modules/css-ui-responsive-menu/css/style.menu.css'
 					]},
-					{'www/css/css-ui-menu-light.min.css': [
+					{'www/css/cssui-menu-light.min.css': [
 						'node_modules/css-ui-responsive-menu/css/style.menu.light.css'
 					]},
-					{'www/css/css-ui-menu-dark.min.css': [
+					{'www/css/cssui-menu-dark.min.css': [
 						'node_modules/css-ui-responsive-menu/css/style.menu.dark.css'
+					]},
+					{'www/css/cssui-dropdown.min.css': [
+						'node_modules/normalize.css/normalize.css',
+						'node_modules/font-awesome/css/font-awesome.css',
+						'node_modules/open-sans-fontface/open-sans.css',
+						'node_modules/css-ui-simple/css/cssui.css',
+						'node_modules/css-ui-dropdown-menu/css/style.dropdown.css'
+					]},
+					{'www/css/cssui-dropdown-light.min.css': [
+						'node_modules/css-ui-dropdown-menu/css/style.dropdown.light.css'
+					]},
+					{'www/css/cssui-dropdown-dark.min.css': [
+						'node_modules/css-ui-dropdown-menu/css/style.dropdown.dark.css'
 					]}
 				]
 			}

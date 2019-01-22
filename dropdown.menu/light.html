@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS UI - Dropdown menu</title>
+
+	<!-- css -->
+	<link rel="stylesheet" href="../www/css/cssui-dropdown.min.css">
+	<link rel="stylesheet" href="../www/css/cssui-dropdown-light.min.css">
+	<style>
+		body {
+			font-family: 'Open Sans', sans-serif;
+			margin-top: 25px;
+		}
+	</style>
+</head>
+<body>
+	<div class="row">
+		<div class="three columns">
+			<div class="dropdown">
+
+				<!-- dropdown menu click -->
+				<div class="clear">
+					<a class="employ-toggle click float right" href="#">
+						<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+					</a>
+				</div>
+
+				<!-- show/hide menu -->
+				<ul class="expand-dropdown">
+					<li><a href="#" class="top">One</a></li>
+					<li><a href="#">Two</a></li>
+					<li><a href="#" class="bottom">Three</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- javascript libraries and plugins  -->
+	<script src="../www/js/main.min.js"></script>
+	<script>
+		$(function() {
+			$('.employ-toggle').on('click', function() {
+				var dropdown = '.expand-dropdown';
+				$(dropdown).fadeToggle('fast');
+				$(dropdown).on('click', function(e) {
+					var target = e.target;
+					var employ = '.employ-toggle';
+					if (!$(target).is(employ) && !$(target).parents().is(employ)) {
+						$(dropdown).hide();
+					}
+				});
+			});
+		});
+	</script>
+</body>
+</html>
