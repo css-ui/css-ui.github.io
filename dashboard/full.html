@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS UI - Simple and fast dashboard template</title>
+
+	<!-- css -->
+	<link rel="stylesheet" href="../www/css/cssui.min.css">
+	<link rel="stylesheet" href="../www/css/cssui-menu-light.min.css">
+	<link rel="stylesheet" href="../www/css/cssui-dropdown-light.min.css">
+	<link rel="stylesheet" href="../www/css/cssui-dashboard.min.css">
+	<link rel="stylesheet" href="../www/css/style.css">
+</head>
+<body>
+	<!-- nav wrapper -->
+	<div class="nav">
+
+		<!-- click show/hide menu -->
+		<div class="click"></div>
+
+		<!-- sidebar -->
+		<div class="sidebar">
+
+			<!-- title for sidebar -->
+			<div class="title">
+				<p>Responsive menu</p>
+			</div>
+			<div class="logged sidebar">
+				<ul class="clear">
+					<li class="gravatar float left"><img src="../www/img/user.png" alt="user"></li>
+					<li class="user float left">John Doe <a href="#">Logout</a></li>
+				</ul>
+			</div>
+			<div class="responsive">
+				<ul class="menu scrollbar">
+
+				    	<!-- simple menu -->
+					<li>
+						<span class="name">Translate</span>
+						<ul>
+						    	<li><a href="#">Czech</a></li>
+							<li><a href="#" class="current">English</a></li>
+						</ul>
+					</li>
+
+					<!-- dropdown menu -->
+					<li>
+						<span class="name">Dashboard</span>
+						<ul>
+						    	<li><a href="#">Home</a></li>
+							<li class="parent">
+								<a href="#" class="employ current">Settings</a>
+								<ul class="submenu">
+									<li><a href="#">Timezone</a></li>
+									<li><a href="#" class="current">Permissions</a></li>
+									<li><a href="#">Maintenance</a></li>
+								</ul>
+							</li>
+
+							<!-- notice info -->
+							<li><a href="#">Notice<span class="notice">3</span></a></li>
+						</ul>
+					</li>
+
+					<!-- dropdown menu -->
+					<li>
+						<span class="name">Coments</span>
+						<ul>
+						    	<li><a href="#">New</a></li>
+							<li class="parent">
+								<a href="#" class="employ">Settings comments</a>
+								<ul class="submenu">
+									<li><a href="#">Disable</a></li>
+									<li><a href="#">Enable</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+
+					<!-- simple menu -->
+					<li>
+						<span class="name">Blog</span>
+						<ul>
+						    	<li><a href="#">Add</a></li>
+							<li><a href="#">List</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- content wrapper -->
+	<div class="content-wrapper">
+		<div class="header">
+			<div class="clear">
+
+				<!-- header dashboard -->
+				<div class="float left">
+					<ul class="breadcrumb">
+						<li><a href=""><i class="fa fa-square-o" aria-hidden="true"></i>Dashboard</a></li>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Sample</li>
+					</ul>
+				</div>
+
+				<!-- logged in header user -->
+				<div class="float right user panel">
+
+					<!-- user identity -->
+					<div class="float left logged in">
+						<ul class="clear">
+							<li class="user float left">You login as John Doe</li>
+							<li class="gravatar float left"><img src="../www/img/user.png" alt="user"></li>
+						</ul>
+					</div>
+
+					<!-- dropdown menu -->
+					<div class="float left">
+						<div class="dropdown">
+
+							<!-- dropdown menu click -->
+							<div class="clear">
+								<a class="employ-toggle click float right" href="#">
+									<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+								</a>
+							</div>
+
+							<!-- show/hide menu -->
+							<ul class="expand-dropdown">
+								<li><a href="#" class="top"><i class="fa fa-user-o" aria-hidden="true"></i>Profile</a></li>
+								<li><a href="#" class="bottom"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a></li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- content -->
+		<div class="content">
+			<div class="box style">
+				<h4>Sample forms</h4>
+				<form>
+					<fieldset>
+						<legend>Form in fieldset</legend>
+						<div class="row">
+							<div class="six columns">
+								<div class="three columns"><label class="add" for="text">Text</label></div>
+								<div class="eight columns"><input class="full width" type="text" id="text" placeholder="Text"></div>
+							</div>
+							<div class="six columns">
+								<div class="three columns"><label class="add" for="password">Password</label></div>
+								<div class="eight columns"><input class="full width" type="password" id="password" placeholder="Password" required></div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="six columns">
+								<div class="three columns"><label class="add" for="select">Select</label></div>
+								<div class="eight columns">
+									<select id="select" required="" class="full width">
+										<option value="">Choose an item</option>
+										<option value="1">Woman</option>
+										<option value="2">Man</option>
+									</select>
+								</div>
+							</div>
+							<div class="six columns">
+								    <div class="three columns"><label class="add" for="number">Number</label></div>
+								    <div class="eight columns">
+									    <input class="full width" type="number" id="number" placeholder="Number">
+								    </div>
+							    </div>
+						</div>
+					</fieldset>
+					<div class="row">
+						<div class="twelve columns">
+							<input type="submit" value="Submit" class="button primary">
+							<input type="reset" class="button common">
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="row">
+				<div class="six columns">
+					<div class="box style">
+						<h4>Sample table</h4>
+						<table class="full width">
+							<tr>
+								<th>#</th>
+								<th>Username</th>
+								<th>Email</th>
+								<th>Action</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>Root</td>
+								<td>root@domain.com</td>
+								<td class="table-buttons">
+									<span class="tooltip">
+										<a href="#">
+											<i class="fa fa-pencil" aria-hidden="true"></i>
+											<span class="warning left">Edit</span>
+										</a>
+									</span>
+									<span class="tooltip">
+										<a href="#">
+											<i class="fa fa-times" aria-hidden="true"></i>
+											<span class="danger right">Delete</span>
+										</a>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Admin</td>
+								<td>admin@domain.com</td>
+								<td class="table-buttons">
+									<span class="tooltip">
+										<a href="#">
+											<i class="fa fa-pencil" aria-hidden="true"></i>
+											<span class="warning left">Edit</span>
+										</a>
+									</span>
+									<span class="tooltip">
+										<a href="#">
+											<i class="fa fa-times" aria-hidden="true"></i>
+											<span class="danger right">Delete</span>
+										</a>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>User</td>
+								<td>user@domain.com</td>
+								<td class="table-buttons">
+									<span class="tooltip">
+										<a href="#">
+											<i class="fa fa-pencil" aria-hidden="true"></i>
+											<span class="warning left">Edit</span>
+										</a>
+									</span>
+									<span class="tooltip">
+										<a href="#">
+											<i class="fa fa-times" aria-hidden="true"></i>
+											<span class="danger right">Delete</span>
+										</a>
+									</span>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="six columns">
+					<div class="box style">
+						<h4>Sample style table</h4>
+						<table class="full width">
+							<tr class="default">
+								<th>#</th>
+								<th>Username</th>
+								<th>Email</th>
+								<th>Action</th>
+							</tr>
+							<tr class="default">
+								<td>1</td>
+								<td>Root</td>
+								<td>root@domain.com</td>
+								<td class="table-buttons">
+									<span class="tooltip">
+										<a href="#">
+											<i class="fa fa-pencil" aria-hidden="true"></i>
+											<span class="warning left">Edit</span>
+										</a>
+									</span>
+									<span class="tooltip">
+										<a href="#">
+											<i class="fa fa-times" aria-hidden="true"></i>
+											<span class="danger right">Delete</span>
+										</a>
+									</span>
+								</td>
+							</tr>
+							<tr class="default">
+								<td>2</td>
+								<td>Admin</td>
+								<td>admin@domain.com</td>
+								<td class="table-buttons">
+									<span class="tooltip">
+										<a href="#">
+											<i class="fa fa-pencil" aria-hidden="true"></i>
+											<span class="warning left">Edit</span>
+										</a>
+									</span>
+									<span class="tooltip">
+										<a href="#">
+											<i class="fa fa-times" aria-hidden="true"></i>
+											<span class="danger right">Delete</span>
+										</a>
+									</span>
+								</td>
+							</tr>
+							<tr class="default">
+								<td>3</td>
+								<td>User</td>
+								<td>user@domain.com</td>
+								<td class="table-buttons">
+									<span class="tooltip">
+										<a href="#">
+											<i class="fa fa-pencil" aria-hidden="true"></i>
+											<span class="warning left">Edit</span>
+										</a>
+									</span>
+									<span class="tooltip">
+										<a href="#">
+											<i class="fa fa-times" aria-hidden="true"></i>
+											<span class="danger right">Delete</span>
+										</a>
+									</span>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="box style">
+				<h4>Sample paragraphs</h4>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
+				<p>
+					<em>Duis aute irure <strong>dolor in reprehenderit in voluptate</strong> velit esse cillum <strong>dolore eu fugiat</strong> nulla pariatur.</em>
+				</p>
+				<blockquote class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</blockquote>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- javascript libraries and plugins  -->
+	<script src="../www/js/main.min.js"></script>
+	<script>
+		$(function() {
+
+			// nanobar
+			var nanobar = new Nanobar();
+			    nanobar.go(100);
+
+			// perfect scrollbar
+			const ps = new PerfectScrollbar('.scrollbar');
+
+			// click show/hide menu
+			$('.nav .click').on('click', function() {
+				$('.nav .responsive').toggleClass('expandable');
+			});
+
+			// responsive menu
+			$('ul.menu li').each(function() {
+				if ($(this).children('li.parent a.current').length > 0 ) {
+					$(this).parent().find('ul.submenu').toggle();
+					$(this).parent().find('li.parent a.employ').addClass('active');
+				}
+			});
+
+			// responsive active menu
+			$('ul.menu li a').on('click', function() {
+				$(this).parent('li.parent').find('a.employ').toggleClass('active');
+				$(this).parent().find('ul.submenu').slideToggle('fast');
+			});
+
+			// dropdown menu
+			$('.employ-toggle').on('click', function() {
+				var dropdown = '.expand-dropdown';
+				$(dropdown).fadeToggle('fast');
+				$(dropdown).on('click', function(e) {
+					var target = e.target;
+					var employ = '.employ-toggle';
+					if (!$(target).is(employ) && !$(target).parents().is(employ)) {
+						$(dropdown).hide();
+					}
+				});
+			});
+		});
+	</script>
+</body>
+</html>
