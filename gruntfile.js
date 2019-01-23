@@ -15,8 +15,7 @@ module.exports = function(grunt) {
 						'node_modules/css-ui-tooltip/css/style.tooltip.css',
 						'node_modules/css-ui-tooltip/css/style.tooltip.theme.css',
 						'node_modules/css-ui-table/css/style.tables.css',
-						'node_modules/css-ui-modal-box/css/style.modal.box.css',
-						'node_modules/css-ui-dashboard/css/style.dashboard.css'
+						'node_modules/css-ui-modal-box/css/style.modal.box.css'
 					]},
 					{'www/css/cssui-menu-light.min.css': [
 						'node_modules/css-ui-responsive-menu/css/style.menu.light.css'
@@ -32,6 +31,9 @@ module.exports = function(grunt) {
 					]},
 					{'www/css/cssui-sing-in.min.css': [
 						'node_modules/css-ui-sign-in/css/style.sign.in.css'
+					]},
+					{'www/css/cssui-dashboard.min.css': [
+						'node_modules/css-ui-dashboard/css/style.dashboard.css'
 					]}
 				]
 			}
