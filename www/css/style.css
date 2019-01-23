@@ -20,16 +20,3 @@ body {
     transition: height .3s;
     width: 0;
 }
-
-/* forms - I'll have to fix it later
-   ========================================================================== */
-label.add {
-    padding-top: 6px;
-}
-
-.table-buttons a {
-
-    padding: 2px 4px;
-    border-radius: 3px;
-    color: #acacac;
-}
