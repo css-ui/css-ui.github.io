@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS UI - Simple and fast dashboard template</title>
+
+	<!-- css -->
+	<link rel="stylesheet" href="../www/css/cssui.min.css">
+	<link rel="stylesheet" href="../www/css/cssui-menu-light.min.css">
+	<link rel="stylesheet" href="../www/css/cssui-dropdown-light.min.css">
+	<link rel="stylesheet" href="../www/css/style.css">
+</head>
+<body>
+	<!-- nav wrapper -->
+	<div class="nav">
+
+		<!-- click show/hide menu -->
+		<div class="click"></div>
+
+		<!-- sidebar -->
+		<div class="sidebar">
+
+			<!-- title for sidebar -->
+			<div class="title">
+				<p>Responsive menu</p>
+			</div>
+			<div class="logged sidebar">
+				<ul class="clear">
+					<li class="gravatar float left"><img src="../www/img/user.png" alt="user"></li>
+					<li class="user float left">John Doe <a href="#">Logout</a></li>
+				</ul>
+			</div>
+			<div class="responsive">
+				<ul class="menu scrollbar">
+
+				    	<!-- simple menu -->
+					<li>
+						<span class="name">Translate</span>
+						<ul>
+						    	<li><a href="#">Czech</a></li>
+							<li><a href="#" class="current">English</a></li>
+						</ul>
+					</li>
+
+					<!-- dropdown menu -->
+					<li>
+						<span class="name">Dashboard</span>
+						<ul>
+						    	<li><a href="#">Home</a></li>
+							<li class="parent">
+								<a href="#" class="employ current">Settings</a>
+								<ul class="submenu">
+									<li><a href="#">Timezone</a></li>
+									<li><a href="#" class="current">Permissions</a></li>
+									<li><a href="#">Maintenance</a></li>
+								</ul>
+							</li>
+
+							<!-- notice info -->
+							<li><a href="#">Notice<span class="notice">3</span></a></li>
+						</ul>
+					</li>
+
+					<!-- dropdown menu -->
+					<li>
+						<span class="name">Coments</span>
+						<ul>
+						    	<li><a href="#">New</a></li>
+							<li class="parent">
+								<a href="#" class="employ">Settings comments</a>
+								<ul class="submenu">
+									<li><a href="#">Disable</a></li>
+									<li><a href="#">Enable</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+
+					<!-- simple menu -->
+					<li>
+						<span class="name">Blog</span>
+						<ul>
+						    	<li><a href="#">Add</a></li>
+							<li><a href="#">List</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- content wrapper -->
+	<div class="content-wrapper">
+		<div class="header">
+			<div class="clear">
+
+				<!-- header dashboard -->
+				<div class="float left">
+					<ul class="breadcrumb">
+						<li><a href=""><i class="fa fa-square-o" aria-hidden="true"></i>Dashboard</a></li>
+						<li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Sample</li>
+					</ul>
+				</div>
+
+				<!-- logged in header user -->
+				<div class="float right user panel">
+
+					<!-- user identity -->
+					<div class="float left logged in">
+						<ul class="clear">
+							<li class="user float left">You login as John Doe</li>
+							<li class="gravatar float left"><img src="../www/img/user.png" alt="user"></li>
+						</ul>
+					</div>
+
+					<!-- dropdown menu -->
+					<div class="float left">
+						<div class="dropdown">
+
+							<!-- dropdown menu click -->
+							<div class="clear">
+								<a class="employ-toggle click float right" href="#">
+									<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+								</a>
+							</div>
+
+							<!-- show/hide menu -->
+							<ul class="expand-dropdown">
+								<li><a href="#" class="top">Profile</a></li>
+								<li><a href="#" class="bottom">Logout</a></li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- content -->
+		<div class="content">
+			<div class="box style">
+				<h4>Sample</h4>
+				Content...
+			</div>
+		</div>
+	</div>
+
+	<!-- javascript libraries and plugins  -->
+	<script src="../www/js/main.min.js"></script>
+	<script>
+		$(function() {
+
+			// nanobar
+			var nanobar = new Nanobar();
+			    nanobar.go(100);
+
+			// perfect scrollbar
+			const ps = new PerfectScrollbar('.scrollbar');
+
+			// click show/hide menu
+			$('.nav .click').on('click', function() {
+				$('.nav .responsive').toggleClass('expandable');
+			});
+
+			// responsive menu
+			$('ul.menu li').each(function() {
+				if ($(this).children('li.parent a.current').length > 0 ) {
+					$(this).parent().find('ul.submenu').toggle();
+					$(this).parent().find('li.parent a.employ').addClass('active');
+				}
+			});
+
+			// responsive active menu
+			$('ul.menu li a').on('click', function() {
+				$(this).parent('li.parent').find('a.employ').toggleClass('active');
+				$(this).parent().find('ul.submenu').slideToggle('fast');
+			});
+
+			// dropdown menu
+			$('.employ-toggle').on('click', function() {
+				var dropdown = '.expand-dropdown';
+				$(dropdown).fadeToggle('fast');
+				$(dropdown).on('click', function(e) {
+					var target = e.target;
+					var employ = '.employ-toggle';
+					if (!$(target).is(employ) && !$(target).parents().is(employ)) {
+						$(dropdown).hide();
+					}
+				});
+			});
+		});
+	</script>
+</body>
+</html>

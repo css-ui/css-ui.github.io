@@ -10,6 +10,7 @@
 		"css-ui-table": "^1.0.8",
 		"css-ui-tooltip": "^2.0.6",
 		"css-ui-modal-box": "^1.0.7",
+		"css-ui-dashboard": "^1.0.0",
 		"grunt": "^1.0.3",
 		"grunt-contrib-copy": "^1.0.0",
 		"grunt-contrib-cssmin": "^3.0.0",

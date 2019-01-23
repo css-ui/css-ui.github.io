@@ -15,7 +15,8 @@ module.exports = function(grunt) {
 						'node_modules/css-ui-tooltip/css/style.tooltip.css',
 						'node_modules/css-ui-tooltip/css/style.tooltip.theme.css',
 						'node_modules/css-ui-table/css/style.tables.css',
-						'node_modules/css-ui-modal-box/css/style.modal.box.css'
+						'node_modules/css-ui-modal-box/css/style.modal.box.css',
+						'node_modules/css-ui-dashboard/css/style.dashboard.css'
 					]},
 					{'www/css/cssui-menu-light.min.css': [
 						'node_modules/css-ui-responsive-menu/css/style.menu.light.css'
@@ -40,7 +41,9 @@ module.exports = function(grunt) {
 				files: [
 					{expand: true, cwd: 'node_modules/font-awesome/fonts/', src: ['**'], dest: 'www/fonts/'},
 					{expand: true, cwd: 'node_modules/open-sans-fontface/fonts/', src: ['**'], dest: 'www/css/fonts/'},
-					{expand: true, cwd: 'node_modules/css-ui-sign-in/img/', src: ['**'], dest: 'www/img/'}
+					{expand: true, cwd: 'node_modules/css-ui-sign-in/img/', src: ['**'], dest: 'www/img/'},
+					{expand: true, cwd: 'node_modules/css-ui-dashboard/img/', src: ['**'], dest: 'www/img/'},
+					{expand: true, flatten: true, src: ['node_modules/css-ui-dashboard/css/style.css'], dest: 'www/css', filter: 'isFile'}
 				]
 			}
 		},
@@ -53,8 +56,9 @@ module.exports = function(grunt) {
 			my_target: {
 				files: {
 					'www/js/main.min.js': [
-					    'node_modules/jquery/dist/jquery.js',
-					    'node_modules/perfect-scrollbar/dist/perfect-scrollbar.js'
+						'node_modules/jquery/dist/jquery.js',
+						'node_modules/perfect-scrollbar/dist/perfect-scrollbar.js',
+						'node_modules/nanobar/nanobar.js'
 					]
 				}
 			}
