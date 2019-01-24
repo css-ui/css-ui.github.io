@@ -11,7 +11,6 @@
 		"css-ui-sign-in": "^1.1.2",
 		"css-ui-table": "^1.0.8",
 		"css-ui-tooltip": "^2.0.6",
-		"css-ui-simple": "^2.5.2",
 		"grunt": "^1.0.3",
 		"grunt-contrib-copy": "^1.0.0",
 		"grunt-contrib-cssmin": "^3.0.0",
