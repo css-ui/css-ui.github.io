@@ -43,9 +43,7 @@ module.exports = function(grunt) {
 					{expand: true, cwd: 'node_modules/open-sans-fontface/fonts/', src: ['**'], dest: 'www/css/fonts/'},
 					{expand: true, cwd: 'node_modules/css-ui-sign-in/img/', src: ['**'], dest: 'www/img/'},
 					{expand: true, cwd: 'node_modules/css-ui-dashboard/img/', src: ['**'], dest: 'www/img/'},
-					{expand: true, flatten: true, src: ['node_modules/css-ui-dashboard/css/style.css'], dest: 'www/css', filter: 'isFile'},
-					{expand: true, flatten: true, src: ['node_modules/css-ui-responsive-menu/js/responsive.menu.js'], dest: 'www/js', filter: 'isFile'},
-					{expand: true, flatten: true, src: ['node_modules/css-ui-dropdown-menu/js/dropdown.menu.js'], dest: 'www/js', filter: 'isFile'}
+					{expand: true, flatten: true, src: ['node_modules/css-ui-dashboard/css/style.css'], dest: 'www/css', filter: 'isFile'}
 				]
 			}
 		},
@@ -60,7 +58,9 @@ module.exports = function(grunt) {
 					'www/js/main.min.js': [
 						'node_modules/jquery/dist/jquery.js',
 						'node_modules/perfect-scrollbar/dist/perfect-scrollbar.js',
-						'node_modules/nanobar/nanobar.js'
+						'node_modules/nanobar/nanobar.js',
+						'node_modules/css-ui-responsive-menu/js/responsive.menu.js',
+						'node_modules/css-ui-dropdown-menu/js/dropdown.menu.js'
 					]
 				}
 			}
