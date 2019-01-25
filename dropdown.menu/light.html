@@ -12,48 +12,37 @@
 		body {
 			font-family: 'Open Sans', sans-serif;
 			padding: 25px;
+			background: #fff;
 		}
 	</style>
 </head>
 <body>
+	<div class="scrollbar"></div>
 	<div class="row">
 		<div class="four columns">
 			<h2>CSS UI - Dropdown menu</h2>
 			<div class="dropdown">
 
 				<!-- dropdown menu click -->
-				<div class="clear">
-					<a class="employ-toggle click float right" href="#">
-						<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-					</a>
-				</div>
+							<div class="clear">
+								<a class="employ-toggle click float right" href="#">
+									<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+								</a>
+							</div>
 
-				<!-- show/hide menu -->
-				<ul class="expand-dropdown">
-					<li><a href="#" class="top">One</a></li>
-					<li><a href="#">Two</a></li>
-					<li><a href="#" class="bottom">Three</a></li>
-				</ul>
+							<!-- show/hide menu -->
+							<ul class="expand-dropdown">
+								<li><a href="#" class="top"><i class="fa fa-user-o" aria-hidden="true"></i>Profile</a></li>
+								<li><a href="#" class="bottom"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a></li>
+							</ul>
+						</div>
+
 			</div>
 		</div>
 	</div>
 
 	<!-- javascript libraries and plugins  -->
 	<script src="../www/js/main.min.js"></script>
-	<script>
-		$(function() {
-			$('.employ-toggle').on('click', function() {
-				var dropdown = '.expand-dropdown';
-				$(dropdown).fadeToggle('fast');
-				$(dropdown).on('click', function(e) {
-					var target = e.target;
-					var employ = '.employ-toggle';
-					if (!$(target).is(employ) && !$(target).parents().is(employ)) {
-						$(dropdown).hide();
-					}
-				});
-			});
-		});
-	</script>
+	<script src="../www/js/dropdown.menu.js"></script>
 </body>
 </html>

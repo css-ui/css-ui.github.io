@@ -12,6 +12,7 @@
 		body {
 			font-family: 'Open Sans', sans-serif;
 			padding: 25px;
+			background: #fff;
 		}
 	</style>
 </head>
@@ -40,20 +41,6 @@
 
 	<!-- javascript libraries and plugins  -->
 	<script src="../www/js/main.min.js"></script>
-	<script>
-		$(function() {
-			$('.employ-toggle').on('click', function() {
-				var dropdown = '.expand-dropdown';
-				$(dropdown).fadeToggle('fast');
-				$(dropdown).on('click', function(e) {
-					var target = e.target;
-					var employ = '.employ-toggle';
-					if (!$(target).is(employ) && !$(target).parents().is(employ)) {
-						$(dropdown).hide();
-					}
-				});
-			});
-		});
-	</script>
+	<script src="../www/js/dropdown.menu.js"></script>
 </body>
 </html>

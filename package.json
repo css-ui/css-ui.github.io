@@ -4,10 +4,10 @@
 	"description": "CSS UI - Demo.",
 	"main": "gruntfile.js",
 	"dependencies": {
-		"css-ui-dashboard": "^1.0.3",
-		"css-ui-dropdown-menu": "^1.2.0",
+		"css-ui-dashboard": "^1.0.7",
+		"css-ui-dropdown-menu": "^1.2.1",
 		"css-ui-modal-box": "^1.0.7",
-		"css-ui-responsive-menu": "^3.1.2",
+		"css-ui-responsive-menu": "^3.1.4",
 		"css-ui-sign-in": "^1.1.2",
 		"css-ui-table": "^1.0.8",
 		"css-ui-tooltip": "^2.0.6",
