@@ -3,6 +3,7 @@
    ========================================================================== */
 body {
     font-family: 'Open Sans', sans-serif;
+    height: 100%;
 }
 
 /* nanobar
@@ -19,4 +20,13 @@ body {
     height: 100%;
     transition: height .3s;
     width: 0;
+}
+
+/* message
+   ========================================================================== */
+.close-message {
+    float: right;
+    cursor: pointer;
+    position: relative;
+    top: -2px;
 }
