@@ -33,7 +33,8 @@ module.exports = function(grunt) {
 						'node_modules/css-ui-sign-in/css/style.sign.in.css'
 					]},
 					{'www/css/cssui-dashboard.min.css': [
-						'node_modules/css-ui-dashboard/css/style.dashboard.css'
+						'node_modules/css-ui-dashboard/css/style.dashboard.css',
+						'node_modules/css-ui-dashboard/css/style.scrollbar.css'
 					]}
 				]
 			}
