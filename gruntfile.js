@@ -63,7 +63,8 @@ module.exports = function(grunt) {
 						'node_modules/perfect-scrollbar/dist/perfect-scrollbar.js',
 						'node_modules/nanobar/nanobar.js',
 						'node_modules/css-ui-responsive-menu/js/responsive.menu.js',
-						'node_modules/css-ui-dropdown-menu/js/dropdown.menu.js'
+						'node_modules/css-ui-dropdown-menu/js/dropdown.menu.js',
+						'node_modules/floatthead/src/jquery.floatThead.js'
 					]
 				}
 			}

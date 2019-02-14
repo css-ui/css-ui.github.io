@@ -194,69 +194,66 @@
 						<h4>Sample table</h4>
 						<div class="scrollbar table">
 							<table class="full width">
-								<tr>
-									<th>#</th>
-									<th>Username</th>
-									<th>Email</th>
-									<th>Action</th>
-								</tr>
-								<tr>
-									<td>1</td>
-									<td>Root</td>
-									<td>root@domain.com</td>
-									<td class="action-buttons">
-										<span class="tooltip">
-											<a href="#">
-												<i class="fa fa-pencil" aria-hidden="true"></i>
-												<span class="warning left">Edit</span>
-											</a>
-										</span>
-										<span class="tooltip">
-											<a href="#">
-												<i class="fa fa-times" aria-hidden="true"></i>
-												<span class="danger right">Delete</span>
-											</a>
-										</span>
-									</td>
-								</tr>
-								<tr>
-									<td>2</td>
-									<td>Admin</td>
-									<td>admin@domain.com</td>
-									<td class="action-buttons">
-										<span class="tooltip">
-											<a href="#">
-												<i class="fa fa-pencil" aria-hidden="true"></i>
-												<span class="warning left">Edit</span>
-											</a>
-										</span>
-										<span class="tooltip">
-											<a href="#">
-												<i class="fa fa-times" aria-hidden="true"></i>
-												<span class="danger right">Delete</span>
-											</a>
-										</span>
-									</td>
-								</tr>
-								<tr>
-									<td>3</td>
-									<td>User</td>
-									<td>user@domain.com</td>
-									<td class="action-buttons">
-										<span class="tooltip">
-											<a href="#">
-												<i class="fa fa-pencil" aria-hidden="true"></i>
-												<span class="warning left">Edit</span>
-											</a>
-										</span>
-										<span class="tooltip">
-											<a href="#">
-												<i class="fa fa-times" aria-hidden="true"></i>
-												<span class="danger right">Delete</span>
-											</a>
-										</span>
-									</td>
-								</tr>
+								<thead>
+									<tr>
+										<th>Country</th>
+										<th>Currency</th>
+										<th>Quantity</th>
+										<th>Buy</th>
+										<th>Sell</th>
+										<th>Mid</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Australia</td>
+										<td>Australian dollar</td>
+										<td>1</td>
+										<td>15,847</td>
+										<td>16,660</td>
+										<td>16,253</td>
+									</tr>
+									<tr>
+										<td>EU</td>
+										<td>Euro</td>
+										<td>1</td>
+										<td>25,1657</td>
+										<td>26,455</td>
+										<td>25,810</td>
+									</tr>
+									<tr>
+										<td>USA</td>
+										<td>United States dollar</td>
+										<td>1</td>
+										<td>22.270</td>
+										<td>23,412</td>
+										<td>22,841</td>
+									</tr>
+									<tr>
+										<td>Australia</td>
+										<td>Australian dollar</td>
+										<td>1</td>
+										<td>15,847</td>
+										<td>16,660</td>
+										<td>16,253</td>
+									</tr>
+									<tr>
+										<td>EU</td>
+										<td>Euro</td>
+										<td>1</td>
+										<td>25,1657</td>
+										<td>26,455</td>
+										<td>25,810</td>
+									</tr>
+									<tr>
+										<td>USA</td>
+										<td>United States dollar</td>
+										<td>1</td>
+										<td>22.270</td>
+										<td>23,412</td>
+										<td>22,841</td>
+									</tr>
+								</tbody>
 							</table>
 						</div>
 					</div>
@@ -266,69 +263,130 @@
 						<h4>Sample style table</h4>
 						<div class="scrollbar table">
 							<table class="full width">
-								<tr class="default">
-									<th>#</th>
-									<th>Username</th>
-									<th>Email</th>
-									<th>Action</th>
-								</tr>
-								<tr class="default">
-									<td>1</td>
-									<td>Root</td>
-									<td>root@domain.com</td>
-									<td class="action-buttons">
-										<span class="tooltip">
-											<a href="#">
-												<i class="fa fa-pencil" aria-hidden="true"></i>
-												<span class="warning left">Edit</span>
-											</a>
-										</span>
-										<span class="tooltip">
-											<a href="#">
-												<i class="fa fa-times" aria-hidden="true"></i>
-												<span class="danger right">Delete</span>
-											</a>
-										</span>
-									</td>
-								</tr>
-								<tr class="default">
-									<td>2</td>
-									<td>Admin</td>
-									<td>admin@domain.com</td>
-									<td class="action-buttons">
-										<span class="tooltip">
-											<a href="#">
-												<i class="fa fa-pencil" aria-hidden="true"></i>
-												<span class="warning left">Edit</span>
-											</a>
-										</span>
-										<span class="tooltip">
-											<a href="#">
-												<i class="fa fa-times" aria-hidden="true"></i>
-												<span class="danger right">Delete</span>
-											</a>
-										</span>
-									</td>
-								</tr>
-								<tr class="default">
-									<td>3</td>
-									<td>User</td>
-									<td>user@domain.com</td>
-									<td class="action-buttons">
-										<span class="tooltip">
-											<a href="#">
-												<i class="fa fa-pencil" aria-hidden="true"></i>
-												<span class="warning left">Edit</span>
-											</a>
-										</span>
-										<span class="tooltip">
-											<a href="#">
-												<i class="fa fa-times" aria-hidden="true"></i>
-												<span class="danger right">Delete</span>
-											</a>
-										</span>
-									</td>
-								</tr>
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>Role</th>
+										<th>From</th>
+										<th>Action</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>John Doe</td>
+										<td>Admin</td>
+										<td>USA</td>
+										<td class="action-buttons">
+											<span class="tooltip">
+												<a href="#">
+													<i class="fa fa-pencil" aria-hidden="true"></i>
+													<span class="warning left">Edit</span>
+												</a>
+											</span>
+											<span class="tooltip">
+												<a href="#">
+													<i class="fa fa-times" aria-hidden="true"></i>
+													<span class="danger right">Delete</span>
+												</a>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td>Sample Name</td>
+										<td>User</td>
+										<td>PL</td>
+										<td class="action-buttons">
+											<span class="tooltip">
+												<a href="#">
+													<i class="fa fa-pencil" aria-hidden="true"></i>
+													<span class="warning left">Edit</span>
+												</a>
+											</span>
+											<span class="tooltip">
+												<a href="#">
+													<i class="fa fa-times" aria-hidden="true"></i>
+													<span class="danger right">Delete</span>
+												</a>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td>Jan Novák</td>
+										<td>User</td>
+										<td>USA</td>
+										<td class="action-buttons">
+											<span class="tooltip">
+												<a href="#">
+													<i class="fa fa-pencil" aria-hidden="true"></i>
+													<span class="warning left">Edit</span>
+												</a>
+											</span>
+											<span class="tooltip">
+												<a href="#">
+													<i class="fa fa-times" aria-hidden="true"></i>
+													<span class="danger right">Delete</span>
+												</a>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td>John Doe</td>
+										<td>Admin</td>
+										<td>USA</td>
+										<td class="action-buttons">
+											<span class="tooltip">
+												<a href="#">
+													<i class="fa fa-pencil" aria-hidden="true"></i>
+													<span class="warning left">Edit</span>
+												</a>
+											</span>
+											<span class="tooltip">
+												<a href="#">
+													<i class="fa fa-times" aria-hidden="true"></i>
+													<span class="danger right">Delete</span>
+												</a>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td>Sample Name</td>
+										<td>User</td>
+										<td>PL</td>
+										<td class="action-buttons">
+											<span class="tooltip">
+												<a href="#">
+													<i class="fa fa-pencil" aria-hidden="true"></i>
+													<span class="warning left">Edit</span>
+												</a>
+											</span>
+											<span class="tooltip">
+												<a href="#">
+													<i class="fa fa-times" aria-hidden="true"></i>
+													<span class="danger right">Delete</span>
+												</a>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td>Jan Novák</td>
+										<td>User</td>
+										<td>USA</td>
+										<td class="action-buttons">
+											<span class="tooltip">
+												<a href="#">
+													<i class="fa fa-pencil" aria-hidden="true"></i>
+													<span class="warning left">Edit</span>
+												</a>
+											</span>
+											<span class="tooltip">
+												<a href="#">
+													<i class="fa fa-times" aria-hidden="true"></i>
+													<span class="danger right">Delete</span>
+												</a>
+											</span>
+										</td>
+									</tr>
+								</tbody>
 							</table>
 						</div>
 					</div>
@@ -357,11 +415,18 @@
 			    nanobar.go(100);
 
 			new PerfectScrollbar('.scrollbar');
-			$(function() {
-				$('.scrollbar.table').each(function() {
-					new PerfectScrollbar($(this)[0]);
-				});
-			})
+
+			// float thead
+			var table = $('table');
+			var scrollbar = '.scrollbar.table';
+			$(scrollbar).each(function() {
+				new PerfectScrollbar($(this)[0]);
+			});
+			table.floatThead({
+				scrollContainer: function(table) {
+					return table.closest(scrollbar);
+				}
+			});
 
 			// close messages
 			$('.close-message').on('click', function() {
