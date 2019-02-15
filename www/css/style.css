@@ -21,11 +21,3 @@ body {
     transition: height .3s;
     width: 0;
 }
-
-.scrollbar.table {
-    height: 160px;;
-}
-
-table th {
-    background: #fff;
-}
